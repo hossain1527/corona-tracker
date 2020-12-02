@@ -1,38 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* background: #eee;
+  border-bottom: 1px solid maroon; */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/***************Designing of table***********/
+
+table {
+  border-collapse: separate;
+  width: 80%;
+  margin: 0 auto;
+  border-spacing: 0 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table thead tr th {
+  padding: 10px;
+  text-align: left;
+  background: #fff;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+table tbody tr td {
+  padding: 10px;
+  text-align: left;
+  background: #085c2b;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.cntry {
+  background: #0f75c9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.newconfirmed {
+  background: #085c2b;
+}
+
+.newdeaths {
+  background: #085c2b;
+}
+
+.nrecovered {
+  background: #085c2b;
+}
+
+.newtconfirmed {
+  background: #085c2b;
+}
+
+.newtdeaths {
+  background: #085c2b;
+}
+
+.newtrecovered {
+  background: #085c2b;
+}
+
+/************Designing of main caption*********/
+
+.main-caption {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/************Styling first 6 div elements********* */
+
+.new-confirmed h3 {
+  color: #0c87f1;
+  font-weight: bold;
+}
+
+.total-confirmed h3 {
+  color: #0c87f1;
+  font-weight: bold;
+}
+
+.new-recovered h3 {
+  color: #39ff14;
+  font-weight: bold;
+}
+
+.total-recovered h3 {
+  color: #39ff14;
+  font-weight: bold;
+}
+
+.new-deaths h3 {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.total-deaths h3 {
+  color: #ff0000;
+  font-weight: bold;
+}
+/**************To design corona icon**************/
+
+.corona-icon {
+  color: #ca1f0b;
+  position: relative;
+  font-size: 50px;
+  animation: sunRotation 5s infinite linear;
+}
+
+@keyframes sunRotation {
   to {
     transform: rotate(360deg);
   }
+}
+
+/*************Designing of current time & date************/
+
+.current-time {
+  color: rgb(168, 14, 168);
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.current-date {
+  color: rgb(168, 14, 168);
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/************Designing of select country option***********/
+
+.select-country {
+  padding-top: 40px !important;
+  padding-bottom: 20px !important;
+  
+}
+
+
+/************Designing of Loading-when starts*************/
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 60px;
+  color: #1743DD;
 }
