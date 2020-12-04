@@ -41,7 +41,7 @@ class Summary extends Component {
 
         <div className="container">
           <div className="row">
-            <table>
+            <table className="table-fixed">
               <div className="col-md-12 p-1 ml-1">
                 <thead>
                   <tr>
@@ -61,7 +61,7 @@ class Summary extends Component {
 
         <div className="container">
           <div className="row">
-            <table>
+            <table className="table-fixed">
               <tbody>
                 {this.state.countries.map((index) => (
                   <Countries key={index.Countries} countries={index} />

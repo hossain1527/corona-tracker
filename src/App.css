@@ -25,9 +25,18 @@ table {
 table thead tr th {
   padding: 10px;
   text-align: left;
-  background: #fff;
   font-weight: bold;
+  background: rgb(131, 5, 5);
+  color: #fff;
+  border: 3px solid #ccc;
+  border-radius: 5%;
 }
+/* 
+.table-fixed tbody{
+  display: block;
+  height: 100%;
+  overflow-y: auto;
+} */
 
 table tbody tr td {
   padding: 10px;
@@ -138,9 +147,7 @@ table tbody tr td {
 .select-country {
   padding-top: 40px !important;
   padding-bottom: 20px !important;
-  
 }
-
 
 /************Designing of Loading-when starts*************/
 .loading {
@@ -149,5 +156,5 @@ table tbody tr td {
   align-items: center;
   min-height: 100vh;
   font-size: 60px;
-  color: #1743DD;
+  color: #1743dd;
 }
